@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
+
+
+
+body{
+    background-color: black;
+    color: white;
+}
+#navbar{
+    margin: -6px;
+    border-radius: 11px;
+    outline: none;
+    background: black;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    height: 58px;
+}
+#logo{
+    width: 56px;
+    border-radius: 11px;
+    height: 56px;
+}
+#navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+}
+#navbar li{
+    padding: 22px;
+    list-style: none;
+}
+#navbar a{
+    
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    margin: 0px 16px;
+    font-size: 25px;
+}
+
+/* front intro  */
+#intro{
+   
+    height: 88vh;
+    margin: 10px 0px;
+    
+}
+#intro h1{
+    position: relative;
+    text-align: center;
+    top: 41%;
+    font-size: 3rem;
+    font-family: 'Bangers', cursive;
+    color: black;
+    animation-name: heading;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#intro p{
+    position: relative;
+    text-align: center;
+    top: 37%;
+    font-size: 24px;
+    font-style: italic; 
+    color: black ;
+    font-weight: bold;
+    animation-name: heading;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#intro::before{
+    content: "";
+    background: center / cover no-repeat url("https://cutewallpaper.org/21/navy-ship-wallpapers/Merchant-Navy-Wallpaper-54-Pictures.jpg");
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.8;
+    z-index: -1;
+    animation-name: back;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes back{
+    0%{
+        top: 5px;
+    }
+    50%{
+        top: 40px;
+        background: center / cover no-repeat url("https://i.pinimg.com/originals/8f/72/5a/8f725a4912f3c9516df042f84e725a22.jpg");
+        
+    }
+    100%{
+        top: 5px;
+    }
+}
+@keyframes heading{
+    0%{
+        
+    }
+    50%{
+     color: rgb(75, 203, 235);
+    }
+    100%{
+       
+    }
+}
+
+/* type of the ships */
+#card{
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    background: rgb(218, 87, 87);
+}
+#card a{
+text-decoration-line: none;
+}
+.type h3{
+    position: relative;
+    top: 68px;
+    font-size: 29px;
+    color: white;
+    padding: 0px;
+    display: inline-block;
+    opacity: 0.8;
+}
+.type h3:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+#hh{
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 32px;
+    color: red;
+    background-color: rgb(20, 17, 17);
+}
+.type{
+    border-radius: 20px;
+    height: 200px;
+    margin: 8px 10px;
+    padding: 7px 146px;
+}
+
+
+#tanker{
+    background: center / cover no-repeat url("https://i.pinimg.com/originals/8f/72/5a/8f725a4912f3c9516df042f84e725a22.jpg");
+    z-index: -1;
+}
+#container{
+    background: center / cover no-repeat url("https://alliswall.com/file/4495/1920x1200/16:9/giant-tanker-ship-wallpaper.jpg");
+    z-index: -1;
+}
+#ice{
+    background: center / cover no-repeat url("https://www.coolantarctica.com/Antarctica%20fact%20file/ships/Yamal-Ice-Breaker-basurama.org-CC-BY-NC-SA-3.0.jpg");
+    z-index: -1;
+}
+
+
+/* information of the ships */
+#info{
+    display: flex;
+    flex-direction: column;
+   
+    margin-top: 2px;
+}
+#tan{
+    
+
+    margin: auto;
+    background: center / cover no-repeat url("https://c4.wallpaperflare.com/wallpaper/458/184/840/ship-oil-tanker-vehicle-sea-wallpaper-preview.jpg");
+    background-color: rgb(0,0,0,0.5);
+  
+}
+
+#con{
+    
+  
+    background: center / cover no-repeat url("https://i.pinimg.com/originals/83/a9/02/83a90298d074c2e9a42cbdc3797ddff8.jpg");
+}
+
+#ic{
+   
+    background: center / cover no-repeat url("https://c4.wallpaperflare.com/wallpaper/804/978/435/icebreakers-nuclear-powered-icebreaker-rosatom-wallpaper-preview.jpg");
+}
+.ifo{
+    height: 100vh;
+    color: black;
+    margin-top: 5px;
+}
+
+/* footer start here  */
+
+#footer{
+    height: auto;
+    background-color: rgb(65, 61, 61);
+}
+.copy{
+  text-align: center;
+  
+}
+#foo li{
+    list-style: none;
+    text-align: center;
+
+}
+.follow img{
+    width: 36px;
+    border-radius: 10px;
+}
+.forflex{
+    display: flex;
+    
+}
+#foo{
+    display: flex;
+    justify-content: center;
+}
+.contactInfo li{
+    list-style: none;
+}
+.followInfo{
+    margin-left: 273px;
+}
+.followInfo p{
+    margin-left: 48px;
+}
