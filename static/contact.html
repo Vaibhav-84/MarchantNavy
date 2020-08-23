@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
-</head>
-<body>
-    <h1>this is contact :))</h1>
-</body>
+<html>
+  <head>
+      <link rel="stylesheet" href="contact.css">
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      
+    <nav id="navbar">
+        <img src="https://images.click.in/classifieds/images/177/5_9_2014_16_26_18_p948no9c22cm95pl5e80p243c6_3j3eoz7ys1.jpg" alt="" id="logo">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./about">About</a></li>
+            <li><a href="./contact">Contact</a></li>
+        </ul>
+    </nav>
+    <form class="myForm" action="/contact" method="post">
+      <input class="myInput" type="text" name="name" placeholder="name" required>
+      <input class="myInput" type="email" name="email" placeholder="Email">
+      <input class="myInput" type="number" name="number" placeholder="Number">
+      <input class="myInput" type="text" name="Question" placeholder="Question">
+      <input class="btn" type="submit" value="Submit">
+    </form>
+    <div class="how">
+      <p class="can">How can i help you</p>
+    </div>
+  </body>
 </html>
