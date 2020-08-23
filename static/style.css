@@ -72,7 +72,7 @@ body{
     top: 41%;
     font-size: 3rem;
     font-family: 'Bangers', cursive;
-    color: black;
+    color: white;
     -webkit-animation-name: heading;
             animation-name: heading;
     -webkit-animation-duration: 10s;
@@ -86,7 +86,7 @@ body{
     top: 37%;
     font-size: 24px;
     font-style: italic;
-    color: black ;
+    color: white ;
     font-weight: bold;
     -webkit-animation-name: heading;
             animation-name: heading;
