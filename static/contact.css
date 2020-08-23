@@ -48,9 +48,7 @@ h3{
     content: "";
     position: absolute;
     z-index: -1;
-    opacity: 0.5;
-   
-    
+    opacity: 0.5;   
 }
 /* fixed background */
 
@@ -76,4 +74,7 @@ h3{
     width: 156px;
     outline: none;
     font-weight: bold;
+}
+.btn:hover{
+  background-color: white;
 }
