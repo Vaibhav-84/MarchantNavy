@@ -21,11 +21,11 @@
     top: 285px;
     position: absolute;
     flex-direction: column;
-    box-shadow: 8px 2px 11px white;
+    /* box-shadow: 8px 2px 11px white; */
     justify-content: center;
     align-items: center;
     border-radius: 46px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
   
 h3{
@@ -34,9 +34,12 @@ h3{
     font-family: 'Lobster', cursive;
 }
 .how{
+    /* background: center / cover no-repeat url(https://wallpaperaccess.com/full/498698.jpg); */
+    background: center / cover no-repeat url(https://i.pinimg.com/originals/5e/da/f3/5edaf319767eddb1e098ebf8b8a435d4.jpg);
     height: 718px;
-    background: center / cover no-repeat url(https://wallpaperaccess.com/full/498698.jpg);
 }
+/* fixed background */
+
 
 .can{
     font-size: 40px;
@@ -50,12 +53,14 @@ h3{
 
 }
 .btn{
-    padding: 5px 10px;
+    padding: 14px 0px;
     margin: 5px 2px;
     border: 2px solid white;
-    border-radius: 10px;
+    border-radius: 21px;
     background: transparent;
     color: red;
+    font-size: 20px;
+    width: 156px;
     outline: none;
     font-weight: bold;
 }

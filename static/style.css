@@ -4,24 +4,21 @@
 
 
 body{
-    background-color: black;
+    background-color: white;
     color: white;
+    margin: -41px 0px;
+
 }
 #navbar{
     margin: -6px;
     border-radius: 11px;
     outline: none;
-    background: white;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
+    background: transparent;
     height: 58px;
+    position: absolute;
+    right: 21px;
 }
-#logo{
-    width: 56px;
-    border-radius: 11px;
-    height: 56px;
-}
+
 #navbar ul{
     display: flex;
     justify-content: flex-end;
@@ -35,19 +32,32 @@ body{
 #navbar a{
 
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 8px;
     margin: 0px 16px;
     font-size: 25px;
 }
+#navbar a:hover{
+    color: red; 
+}
 
 /* front intro  */
 #intro{
-
-    height: 88vh;
-    margin: 10px 0px;
-
+    position: fixed;
+    width: 100%;
+    z-index: -2;
+    height: 100vh;
+    margin: 0px 0px;
+    
+    background: center / cover no-repeat url("https://www.desktopbackground.org/download/1920x1080/2014/08/01/802358_aircraft-carrier-navy-ship-wallpapers-hd-for-desktop-download_1920x1080_h.jpg");
+    -webkit-animation-name: back;
+            animation-name: back;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
+
 #intro h1{
     position: relative;
     text-align: center;
@@ -59,9 +69,9 @@ body{
             animation-name: heading;
     -webkit-animation-duration: 10s;
             animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-}
+        }
 #intro p{
     position: relative;
     text-align: center;
@@ -77,47 +87,30 @@ body{
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
 }
-#intro::before{
-    content: "";
-    background: center / cover no-repeat url("https://cutewallpaper.org/21/navy-ship-wallpapers/Merchant-Navy-Wallpaper-54-Pictures.jpg");
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    opacity: 0.8;
-    z-index: -1;
-    -webkit-animation-name: back;
-            animation-name: back;
-    -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-}
 @-webkit-keyframes back{
     0%{
-        top: 5px;
+       
     }
     50%{
-        top: 40px;
+      
         background: center / cover no-repeat url("https://i.pinimg.com/originals/8f/72/5a/8f725a4912f3c9516df042f84e725a22.jpg");
 
     }
     100%{
-        top: 5px;
+        
     }
 }
 @keyframes back{
     0%{
-        top: 5px;
+        
     }
     50%{
-        top: 40px;
+        
         background: center / cover no-repeat url("https://i.pinimg.com/originals/8f/72/5a/8f725a4912f3c9516df042f84e725a22.jpg");
 
     }
     100%{
-        top: 5px;
+       
     }
 }
 @-webkit-keyframes heading{
@@ -142,7 +135,11 @@ body{
 
     }
 }
-
+/* moving part  */
+.moving{
+    position: relative;
+    top: 100vh;
+}
 /* type of the ships */
 #card{
 
