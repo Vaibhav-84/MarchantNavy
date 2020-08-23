@@ -89,3 +89,6 @@ h3{
     outline: none;
     font-weight: bold;
 }
+.btn:hover {
+  background-color: #fff;
+}
