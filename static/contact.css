@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-::placeholder { 
+::-moz-placeholder {
     color: white;
-    opacity: 1; 
+    opacity: 1;
+  }
+:-ms-input-placeholder {
+    color: white;
+    opacity: 1;
+  }
+::-ms-input-placeholder {
+    color: white;
+    opacity: 1;
+  }
+::placeholder {
+    color: white;
+    opacity: 1;
   }
 body{
-    background-color: black;
+    background-color: rgba(0,0,0,0.8);
 }
 .myInput{
     width: 83%;
@@ -30,7 +42,7 @@ body{
     align-items: center;
     border-radius: 46px;
     /* border: 2px solid white; */
-    
+
 }
 h3{
     color: white;
@@ -75,6 +87,6 @@ h3{
     outline: none;
     font-weight: bold;
 }
-.btn:hover{
-  background-color: white;
+.btn:hover {
+  background-color: #fff;
 }
