@@ -11,7 +11,7 @@ body{
     margin: -6px;
     border-radius: 11px;
     outline: none;
-    background: black;
+    background: white;
     border: 2px solid black;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ body{
 #navbar a{
 
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 8px;
     margin: 0px 16px;
     font-size: 25px;

@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+::placeholder { 
+    color: white;
+    opacity: 1; 
+  }
 .myInput{
     width: 83%;
+    background: transparent;
     padding: 9px 15px;
+    border-radius: 29px;
     margin: 10px;
     text-align: center;
-    border: 2px solid transparent;
-    border-radius: 20px;
+    border: 2px solid white;
     outline: none;
     font-size: 33px;
 }
 .myForm{
     display: flex;
     width: 28%;
-    left: 56%;
-    top: 336px;
+    left: 7%;
+    top: 285px;
     position: absolute;
     flex-direction: column;
     box-shadow: 8px 2px 11px white;
@@ -21,7 +26,6 @@
     align-items: center;
     border-radius: 46px;
     border: 2px solid white;
-   
 }
   
 h3{
@@ -36,7 +40,9 @@ h3{
 
 .can{
     font-size: 40px;
-    text-align: center;
+    top: 103px;
+    left: 163px;
+    position: relative;
     font-style: italic;
     font-weight: bold;
     font-family: 'Lobster', cursive;
@@ -48,7 +54,8 @@ h3{
     margin: 5px 2px;
     border: 2px solid white;
     border-radius: 10px;
-    background: black;
+    background: transparent;
     color: red;
     outline: none;
+    font-weight: bold;
 }
