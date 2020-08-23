@@ -33,7 +33,7 @@ body{
     list-style: none;
 }
 #navbar a{
-    
+
     text-decoration: none;
     color: white;
     padding: 8px;
@@ -43,10 +43,10 @@ body{
 
 /* front intro  */
 #intro{
-   
+
     height: 88vh;
     margin: 10px 0px;
-    
+
 }
 #intro h1{
     position: relative;
@@ -55,21 +55,27 @@ body{
     font-size: 3rem;
     font-family: 'Bangers', cursive;
     color: black;
-    animation-name: heading;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: heading;
+            animation-name: heading;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 #intro p{
     position: relative;
     text-align: center;
     top: 37%;
     font-size: 24px;
-    font-style: italic; 
+    font-style: italic;
     color: black ;
     font-weight: bold;
-    animation-name: heading;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: heading;
+            animation-name: heading;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 #intro::before{
     content: "";
@@ -81,9 +87,25 @@ body{
     bottom: 0px;
     opacity: 0.8;
     z-index: -1;
-    animation-name: back;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: back;
+            animation-name: back;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes back{
+    0%{
+        top: 5px;
+    }
+    50%{
+        top: 40px;
+        background: center / cover no-repeat url("https://i.pinimg.com/originals/8f/72/5a/8f725a4912f3c9516df042f84e725a22.jpg");
+
+    }
+    100%{
+        top: 5px;
+    }
 }
 @keyframes back{
     0%{
@@ -92,27 +114,38 @@ body{
     50%{
         top: 40px;
         background: center / cover no-repeat url("https://i.pinimg.com/originals/8f/72/5a/8f725a4912f3c9516df042f84e725a22.jpg");
-        
+
     }
     100%{
         top: 5px;
     }
 }
-@keyframes heading{
+@-webkit-keyframes heading{
     0%{
-        
+
     }
     50%{
      color: rgb(75, 203, 235);
     }
     100%{
-       
+
+    }
+}
+@keyframes heading{
+    0%{
+
+    }
+    50%{
+     color: rgb(75, 203, 235);
+    }
+    100%{
+
     }
 }
 
 /* type of the ships */
 #card{
-   
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -120,7 +153,8 @@ body{
     background: rgb(218, 87, 87);
 }
 #card a{
-text-decoration-line: none;
+-webkit-text-decoration-line: none;
+        text-decoration-line: none;
 }
 .type h3{
     position: relative;
@@ -168,26 +202,26 @@ text-decoration-line: none;
 #info{
     display: flex;
     flex-direction: column;
-   
+
     margin-top: 2px;
 }
 #tan{
-    
+
 
     margin: auto;
     background: center / cover no-repeat url("https://c4.wallpaperflare.com/wallpaper/458/184/840/ship-oil-tanker-vehicle-sea-wallpaper-preview.jpg");
     background-color: rgb(0,0,0,0.5);
-  
+
 }
 
 #con{
-    
-  
+
+
     background: center / cover no-repeat url("https://i.pinimg.com/originals/83/a9/02/83a90298d074c2e9a42cbdc3797ddff8.jpg");
 }
 
 #ic{
-   
+
     background: center / cover no-repeat url("https://c4.wallpaperflare.com/wallpaper/804/978/435/icebreakers-nuclear-powered-icebreaker-rosatom-wallpaper-preview.jpg");
 }
 .ifo{
@@ -198,37 +232,93 @@ text-decoration-line: none;
 
 /* footer start here  */
 
-#footer{
-    height: auto;
-    background-color: rgb(65, 61, 61);
+/* small grid for placing help */
+.row {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
-.copy{
-  text-align: center;
-  
-}
-#foo li{
-    list-style: none;
-    text-align: center;
 
+.row:before,
+.row:after {
+    content:"";
+    display:table;
 }
-.follow img{
-    width: 36px;
-    border-radius: 10px;
+.row:after {
+    clear:both;
 }
-.forflex{
-    display: flex;
-    
+
+.span-1-of-2 {
+	width: 100%;
 }
-#foo{
-    display: flex;
-    justify-content: center;
+/* background color added */
+.footerbox {
+  background-color: #444444;
 }
-.contactInfo li{
-    list-style: none;
+/* nav divs stylings and placement */
+.footer-nav li,
+.social-nav li {
+  display: inline-block;
+  margin-right: 20px;
 }
-.followInfo{
-    margin-left: 273px;
+.footer-nav{
+  margin-top: 25px;
+  list-style: none;
+  float: left;
 }
-.followInfo p{
-    margin-left: 48px;
+.social-nav {
+  list-style: none;
+  font-size: 22px;
+  float: right;
+}
+/* removing initial decoration */
+.footer-nav a:link ,
+.footer-nav a:visited,
+.social-nav a:link,
+.social-nav a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+}
+
+/* Hover effect to footer nav  */
+.footer-nav a:hover ,
+.footer-nav a:active {
+  color: #ddd;
+}
+
+/* Hover effect to social media logos */
+.fa-facebook-square:hover {
+  color: #3b5998;
+}
+.fa-twitter:hover  {
+  color: #00aced;
+}
+.fa-github:hover {
+  color: #333;
+}
+.fa-instagram:hover {
+  color: #517fa4;
+}
+/* Last Paragraph Style */
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 90px;
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+/* Footer adjusted for small screens */
+@media only screen and (max-width: 480px) {
+	.span-1-of-2 {
+		width: 100%;
+	}
+
+  .footer-nav,.social-nav {
+    float: none;
+    text-align: center;
+    padding: 10px;
+  }
+  .footer-nav{margin-top: 25px;}
+  footer p {
+    margin-top: 0;
+  }
 }
