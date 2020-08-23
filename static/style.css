@@ -12,11 +12,17 @@ body{
 #navbar{
     margin: -6px;
     border-radius: 11px;
+    display: flex;
+    width: 98%;
+    justify-content: flex-end;
+    align-items: center;
     outline: none;
     background: transparent;
     height: 58px;
     position: absolute;
+    top: 11px;
     right: 21px;
+    background-color: rgba(25,0,0,0.5);
 }
 
 #navbar ul{
@@ -33,12 +39,14 @@ body{
 
     text-decoration: none;
     color: white;
-    padding: 8px;
+    padding: 2px 8px;
     margin: 0px 16px;
     font-size: 25px;
 }
 #navbar a:hover{
-    color: red; 
+    color: black; 
+    background-color: white;
+    border-radius: 20px;
 }
 
 /* front intro  */
