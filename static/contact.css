@@ -16,77 +16,17 @@
     opacity: 1;
   }
 body{
-    background-color: rgba(0,0,0,0.8);
-}
-.myInput{
-    width: 83%;
-    background: transparent;
-    padding: 9px 15px;
-    border-radius: 29px;
-    margin: 10px;
-    text-align: center;
-    border: 2px solid white;
-    outline: none;
-    font-size: 33px;
+    /* background-color: rgba(0,0,0,0.8); */
+    margin: 0px;
+    
 }
 
-.myForm{
-    display: flex;
-    width: 28%;
-    left: 7%;
-    top: 285px;
-    position: absolute;
-    flex-direction: column;
-    /* box-shadow: 8px 2px 11px white; */
-    justify-content: center;
-    align-items: center;
-    border-radius: 46px;
-    /* border: 2px solid white; */
-
-}
-h3{
-    color: white;
-    text-align: center;
-    font-family: 'Lobster', cursive;
-}
-.how{
-    height: 716px;
-}
-.how::before{
-    /* background: center / cover no-repeat url(https://wallpaperaccess.com/full/498698.jpg); */
-    background: center / cover no-repeat url(https://i.pinimg.com/originals/5e/da/f3/5edaf319767eddb1e098ebf8b8a435d4.jpg);
-    height: 718px;
-    width: 100%;
-    content: "";
-    position: absolute;
-    z-index: -1;
-    opacity: 0.5;   
-}
-/* fixed background */
-
-
-.can{
-    font-size: 40px;
-    top: 103px;
-    left: 163px;
-    position: relative;
-    font-style: italic;
-    font-weight: bold;
-    font-family: 'Lobster', cursive;
-    color: white;
-}
-.btn{
-    padding: 14px 0px;
-    margin: 5px 2px;
-    border: 2px solid white;
-    border-radius: 21px;
-    background: transparent;
-    color: red;
-    font-size: 20px;
-    width: 156px;
-    outline: none;
-    font-weight: bold;
-}
-.btn:hover {
-  background-color: #fff;
+.formcontainer{
+  color: antiquewhite;
+  width: 80%;
+  /* border: 2px solid red; */
+  margin: 70px auto;
+  border: 2px solid rgb(41, 38, 38);
+  padding: 5px;
+  border-radius: 10px;
 }

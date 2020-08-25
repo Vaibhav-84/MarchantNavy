@@ -1,123 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <title>Hello, world!</title>
 </head>
 
 <body>
+  <div class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navi">
+      <a class="navbar-brand" href="#">TRK</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Types
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Tanker</a>
+              <a class="dropdown-item" href="#">Container</a>
+              <a class="dropdown-item" href="#">Ice-breaker</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/contact.html">Contact Us <span class="sr-only">(current)</span><span
+                class="badge badge-pill badge-danger">New</span></a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-primary mr-1" data-toggle="modal"
+          data-target="#exampleModal">Login</button>
+        <button type="button" class="btn btn-danger mr-1" data-toggle="modal" data-target="#signupModal">Sign
+          Up</button>
 
-  <nav id="navbar">
-    <!-- <img src="https://images.click.in/classifieds/images/177/5_9_2014_16_26_18_p948no9c22cm95pl5e80p243c6_3j3eoz7ys1.jpg" alt="" id="logo"> -->
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="./about">About</a></li>
-      <li><a href="./contact">Contact</a></li>
-    </ul>
-  </nav>
-
-
-  <div id="intro">
-    <h1>Welcome to the World of Ocean</h1>
-    <p>Let's explore the ocean world </p>
+      </div>
+    </nav>
   </div>
 
+  <!--Login Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
 
-<div class="moving">
-  <h3 id="hh">Types of Ship on Which you Can Work</h3>
-  <div id="card">
-    <a href="#tan">
-      <div class="type" id="tanker">
-        <h3>Tanker</h3>
       </div>
+    </div>
+  </div>
+  <!--Sign up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">User Address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade " data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.desktopbackground.org/download/1920x1080/2014/08/01/802358_aircraft-carrier-navy-ship-wallpapers-hd-for-desktop-download_1920x1080_h.jpg" class="d-block w-100 h-22 hh" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <button type="button" class="btn btn-primary mr-1 btn-lg">Offers</button>
+        <button type="button" class="btn btn-success mr-1 btn-lg">Tutorials
+        </button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/originals/8f/72/5a/8f725a4912f3c9516df042f84e725a22.jpg" class="d-block w-100 h-22 hh" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           <button type="button" class="btn btn-primary mr-1 btn-lg">Login</button>
+        <button type="button" class="btn btn-danger mr-1 btn-lg" >Sign
+          Up</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.desktopbackground.org/download/1920x1080/2014/08/01/802358_aircraft-carrier-navy-ship-wallpapers-hd-for-desktop-download_1920x1080_h.jpg" class="d-block w-100 h-22 hh" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+           <button type="button" class="btn btn-primary mr-1 btn-lg">Login</button>
+        <button type="button" class="btn btn-danger mr-1 btn-lg" >Sign
+          Up</button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
     </a>
-    <a href="#con">
-      <div class="type" id="container">
-        <h3>Container</h3>
-      </div>
-    </a>
-    <a href="#ic">
-      <div class="type" id="ice">
-        <h3>Ice-braker</h3>
-      </div>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
     </a>
   </div>
 
-  <div id="info">
-
-    <div id="tan" class="ifo">
-      <p>A tanker (or tank ship or tankship) is a ship designed to transport or store liquids or gases in bulk. Major types of tankship include the oil tanker, the chemical tanker, and gas carrier. Tankers also carry commodities such as vegetable
-        oils, molasses and wine. In the United States Navy and Military Sealift Command, a tanker used to refuel other ships is called an oiler (or replenishment oiler if it can also supply dry stores) but many other navies use the terms tanker and
-        replenishment tanker.</p>
+<div class="container">
+  <div class="card-deck">
+    <div class="card border border-primary">
+      <img src="https://i.pinimg.com/originals/8f/72/5a/8f725a4912f3c9516df042f84e725a22.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tanker</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
     </div>
-
-    <div id="con" class="ifo">
-      <p>Container ships (sometimes spelled containerships) are cargo ships that carry all of their load in truck-size intermodal containers, in a technique called containerization. They are a common means of commercial intermodal freight transport
-        and now carry most seagoing non-bulk cargo.
-
-        Container ship capacity is measured in twenty-foot equivalent units (TEU). Typical loads are a mix of 20-foot and 40-foot (2-TEU) ISO-standard containers, with the latter predominant.
-
-        Today, about 90% of non-bulk cargo worldwide is transported by container ships, and the largest modern container ships can carry over 23,000 TEU (e.g., MSC Gülsün). Container ships now rival crude oil tankers and bulk carriers as the largest
-        commercial seaborne vessels.</p>
+    <div class="card border border-primary">
+      <img src="https://alliswall.com/file/4495/1920x1200/16:9/giant-tanker-ship-wallpaper.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Container</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
     </div>
-
-    <div id="ic" class="ifo">
-      <p>An icebreaker is a special-purpose ship or boat designed to move and navigate through ice-covered waters, and provide safe waterways for other boats and ships. Although the term usually refers to ice-breaking ships, it may also refer to
-        smaller vessels, such as the icebreaking boats that were once used on the canals of the United Kingdom.
-
-        For a ship to be considered an icebreaker, it requires three traits most normal ships lack: a strengthened hull, an ice-clearing shape, and the power to push through sea ice.[1]
-
-        Icebreakers clear paths by pushing straight into frozen-over water or pack ice. The bending strength of sea ice is low enough that the ice breaks usually without noticeable change in the vessel's trim. In cases of very thick ice, an
-        icebreaker can drive its bow onto the ice to break it under the weight of the ship. A buildup of broken ice in front of a ship can slow it down much more than the breaking of the ice itself, so icebreakers have a specially designed hull to
-        direct the broken ice around or under the vessel. The external components of the ship's propulsion system (propellers, propeller shafts, etc.) are at greater risk of damage than the vessel's hull, so the ability of an icebreaker to propel
-        itself onto the ice, break it, and clear the debris from its path successfully is essential for its safety.[2]</p>
+    <div class="card border border-primary">
+      <img src="https://www.coolantarctica.com/Antarctica%20fact%20file/ships/Yamal-Ice-Breaker-basurama.org-CC-BY-NC-SA-3.0.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ice-Breaker</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
     </div>
-
   </div>
-
-
-
-  <footer id="footer">
-    <div class="footerbox row">
-      <!-- left nav -->
-      <div class="col span-1-of-2">
-        <nav>
-          <ul class="footer-nav">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">iOS App</a></li>
-            <li><a href="#">Android App</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- social icons -->
-      <div class="col span-1-of-2">
-        <nav>
-          <ul class="social-nav">
-            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="row">
-        <!-- Javascript used for auto year change -->
-        <p>
-          Copyright &copy; <script>
-            document.write(new Date().getFullYear())
-          </script> Vaibhav and Gaurav All Rights Reserved
-        </p>
-      </div>
-    </div>
-  </footer>
 </div>
+  
+
+
+    <footer id="footer">
+      <div class="footerbox row">
+        <!-- left nav -->
+        <div class="col span-1-of-2">
+          <nav>
+            <ul class="footer-nav">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">iOS App</a></li>
+              <li><a href="#">Android App</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- social icons -->
+        <div class="col span-1-of-2">
+          <nav>
+            <ul class="social-nav">
+              <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row">
+          <!-- Javascript used for auto year change -->
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script> Vaibhav and Gaurav All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

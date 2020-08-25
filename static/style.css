@@ -2,238 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
 
 
-
 body{
-    background-color: white;
-    color: white;
-    margin: -41px 0px;
-
+    /* background-color: #333; */
 }
-#navbar{
-    margin: -6px;
-    border-radius: 11px;
-    display: flex;
-    width: 98%;
-    justify-content: flex-end;
-    align-items: center;
-    outline: none;
-    background: transparent;
-    height: 58px;
-    position: absolute;
-    top: 11px;
-    right: 21px;
-    background-color: rgba(25,0,0,0.5);
-}
-
-#navbar ul{
-    display: flex;
-    justify-content: flex-end;
-    margin: 0px;
-    padding: 0px;
-}
-#navbar li{
-    padding: 22px;
-    list-style: none;
-}
-#navbar a{
-
-    text-decoration: none;
-    color: white;
-    padding: 2px 8px;
-    margin: 0px 16px;
-    font-size: 25px;
-}
-#navbar a:hover{
-    color: black; 
-    background-color: white;
-    border-radius: 20px;
-}
-
-/* front intro  */
-#intro{
-    position: fixed;
+.card img{
+    height: 250px;
     width: 100%;
-    z-index: -2;
-    height: 100vh;
-    margin: 0px 0px;
-    
-    background: center / cover no-repeat url("https://www.desktopbackground.org/download/1920x1080/2014/08/01/802358_aircraft-carrier-navy-ship-wallpapers-hd-for-desktop-download_1920x1080_h.jpg");
-    -webkit-animation-name: back;
-            animation-name: back;
-    -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+}
+.hh{
+    height: 744px;
+    width: 100%;
+}
+.container{
+    margin: 20px auto;
 }
 
-#intro h1{
-    position: relative;
-    text-align: center;
-    top: 41%;
-    font-size: 3rem;
-    font-family: 'Bangers', cursive;
-    color: white;
-    -webkit-animation-name: heading;
-            animation-name: heading;
-    -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-            -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-        }
-#intro p{
-    position: relative;
-    text-align: center;
-    top: 37%;
-    font-size: 24px;
-    font-style: italic;
-    color: white ;
-    font-weight: bold;
-    -webkit-animation-name: heading;
-            animation-name: heading;
-    -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-}
-@-webkit-keyframes back{
-    0%{
-       
-    }
-    50%{
-      
-        background: center / cover no-repeat url("https://i.pinimg.com/originals/8f/72/5a/8f725a4912f3c9516df042f84e725a22.jpg");
+/* .container{
+    margin: 10px auto;
+} */
 
-    }
-    100%{
-        
-    }
-}
-@keyframes back{
-    0%{
-        
-    }
-    50%{
-        
-        background: center / cover no-repeat url("https://i.pinimg.com/originals/8f/72/5a/8f725a4912f3c9516df042f84e725a22.jpg");
-
-    }
-    100%{
-       
-    }
-}
-@-webkit-keyframes heading{
-    0%{
-
-    }
-    50%{
-     color: rgb(75, 203, 235);
-    }
-    100%{
-
-    }
-}
-@keyframes heading{
-    0%{
-
-    }
-    50%{
-     color: rgb(75, 203, 235);
-    }
-    100%{
-
-    }
-}
-/* moving part  */
-.moving{
-    position: relative;
-    top: 100vh;
-}
-/* type of the ships */
-#card{
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 25px;
-    background: rgb(218, 87, 87);
-}
-#card a{
--webkit-text-decoration-line: none;
-        text-decoration-line: none;
-}
-.type h3{
-    position: relative;
-    top: 68px;
-    font-size: 29px;
-    color: white;
-    padding: 0px;
-    display: inline-block;
-    opacity: 0.8;
-}
-.type h3:hover{
-    transform: scale(1.2);
-    opacity: 1;
-}
-#hh{
-    text-align: center;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 32px;
-    color: red;
-    background-color: rgb(20, 17, 17);
-}
-.type{
-    border-radius: 20px;
-    height: 200px;
-    margin: 8px 10px;
-    padding: 7px 146px;
-}
-
-
-#tanker{
-    background: center / cover no-repeat url("https://i.pinimg.com/originals/8f/72/5a/8f725a4912f3c9516df042f84e725a22.jpg");
-    z-index: -1;
-}
-#container{
-    background: center / cover no-repeat url("https://alliswall.com/file/4495/1920x1200/16:9/giant-tanker-ship-wallpaper.jpg");
-    z-index: -1;
-}
-#ice{
-    background: center / cover no-repeat url("https://www.coolantarctica.com/Antarctica%20fact%20file/ships/Yamal-Ice-Breaker-basurama.org-CC-BY-NC-SA-3.0.jpg");
-    z-index: -1;
-}
-
-
-/* information of the ships */
-#info{
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 2px;
-}
-#tan{
-
-
-    margin: auto;
-    background: center / cover no-repeat url("https://c4.wallpaperflare.com/wallpaper/458/184/840/ship-oil-tanker-vehicle-sea-wallpaper-preview.jpg");
-    background-color: rgb(0,0,0,0.5);
-
-}
-
-#con{
-
-
-    background: center / cover no-repeat url("https://i.pinimg.com/originals/83/a9/02/83a90298d074c2e9a42cbdc3797ddff8.jpg");
-}
-
-#ic{
-
-    background: center / cover no-repeat url("https://c4.wallpaperflare.com/wallpaper/804/978/435/icebreakers-nuclear-powered-icebreaker-rosatom-wallpaper-preview.jpg");
-}
-.ifo{
-    height: 100vh;
-    color: black;
-    margin-top: 5px;
-}
 
 /* footer start here  */
 
@@ -326,4 +113,8 @@ footer p {
   footer p {
     margin-top: 0;
   }
+  .hh{
+    height: 300px;
+    width: 100%;
+}
 }
