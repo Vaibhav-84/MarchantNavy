@@ -16,17 +16,31 @@
     opacity: 1;
   }
 body{
-    /* background-color: rgba(0,0,0,0.8); */
-    margin: 0px;
-    
+  margin: 0px;
+  height: 1000px;
+  background-color: black;
+  color: bisque;
+  
 }
-
+body::before{
+  top: 10px;
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 800px;
+  z-index: -1;
+  opacity: 0.5;
+background: center / cover no-repeat url("mm.jpg");
+}
 .formcontainer{
   color: antiquewhite;
   width: 80%;
-  /* border: 2px solid red; */
   margin: 70px auto;
-  border: 2px solid rgb(41, 38, 38);
+  background: transparent;
   padding: 5px;
   border-radius: 10px;
+}
+.in{
+  background: transparent;
+  /* border: 2px solid transparent; */
 }
