@@ -24,23 +24,7 @@ body{
 
 /* footer start here  */
 
-/* small grid for placing help */
-.row {
-    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
-}
 
-.row:before,
-.row:after {
-    content:"";
-    display:table;
-}
-.row:after {
-    clear:both;
-}
-
-.span-1-of-2 {
-	width: 100%;
-}
 /* background color added */
 .footerbox {
   background-color: #444444;
@@ -51,6 +35,9 @@ body{
   display: inline-block;
   margin-right: 20px;
 }
+.footer-nav:last-child {
+  margin-right: none;
+}
 .footer-nav{
   margin-top: 25px;
   list-style: none;
@@ -58,6 +45,7 @@ body{
 }
 .social-nav {
   list-style: none;
+  margin-top: 10px;
   font-size: 22px;
   float: right;
 }
@@ -90,31 +78,19 @@ body{
 .fa-instagram:hover {
   color: #517fa4;
 }
-/* Last Paragraph Style */
-footer p {
-  color: #888;
-  text-align: center;
-  font-size: 16px;
-  margin-top: 90px;
+.footer-text{
+  margin: 0 auto;
+  color: #fff;
 }
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-/* Footer adjusted for small screens */
-@media only screen and (max-width: 480px) {
-	.span-1-of-2 {
-		width: 100%;
-	}
-
-  .footer-nav,.social-nav {
+@media screen and (max-width: 768px) {
+  .footer-nav{
     float: none;
     text-align: center;
-    padding: 10px;
   }
-  .footer-nav{margin-top: 25px;}
-  footer p {
-    margin-top: 0;
+  .social-nav {
+    float: none;
+    align-items: center;
+    text-align: center;
   }
-  .hh{
-    height: 300px;
-    width: 100%;
-}
+
 }
