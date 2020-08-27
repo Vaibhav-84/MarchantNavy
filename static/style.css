@@ -9,6 +9,9 @@ body{
     height: 250px;
     width: 100%;
 }
+.navi{
+background-color: rgba(10, 0, 0, 0.9);    /* for navbar */
+}
 .hh{
     height: 744px;
     width: 100%;
