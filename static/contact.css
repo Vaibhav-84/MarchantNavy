@@ -1,29 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 ::-moz-placeholder {
-    color: white;
-    opacity: 1;
-  }
+  color: white;
+  opacity: 1;
+}
+
 :-ms-input-placeholder {
-    color: white;
-    opacity: 1;
-  }
+  color: white;
+  opacity: 1;
+}
+
 ::-ms-input-placeholder {
-    color: white;
-    opacity: 1;
-  }
+  color: white;
+  opacity: 1;
+}
+
 ::placeholder {
-    color: white;
-    opacity: 1;
-  }
-body{
+  color: white;
+  opacity: 1;
+}
+
+body {
   margin: 0px;
-  height: 1000px;
+  height: auto;
   background-color: black;
   color: bisque;
-
-
 }
-body::before{
+
+body::before {
   top: 10px;
   content: "";
   position: fixed;
@@ -31,9 +35,10 @@ body::before{
   height: 800px;
   z-index: -1;
   opacity: 0.5;
-background: center / cover no-repeat url("images/mm.jpg");
+  background: center / cover no-repeat url("images/mm.jpg");
 }
-.formcontainer{
+
+.formcontainer {
   color: antiquewhite;
   width: 80%;
   margin: 70px auto;
@@ -42,7 +47,12 @@ background: center / cover no-repeat url("images/mm.jpg");
   border-radius: 10px;
   font-weight: bold;
 }
-.in{
+
+.in {
   background: transparent;
   /* border: 2px solid transparent; */
+}
+
+.button-center {
+  margin-left: 45.5%;
 }
