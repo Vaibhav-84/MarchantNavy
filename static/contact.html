@@ -115,50 +115,47 @@
   </div>
 
   <div class="formcontainer">
-    <form>
+    <form method="post">
       <div class="form-row ">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control in" id="inputEmail4">
+          <input type="email" name="email" class="form-control in" id="inputEmail4">
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4">Number</label>
-          <input type="password" class="form-control in" id="inputPassword4">
+          <input type="number" name="number" class="form-control in" id="inputPassword4">
         </div>
       </div>
       <div class="form-group">
         <label for="inputAddress">Address</label>
-        <input type="text" class="form-control in" id="inputAddress" placeholder="1234 Main St">
+        <input type="text" name="address1" class="form-control in" id="inputAddress" placeholder="1234 Main St">
       </div>
       <div class="form-group">
         <label for="inputAddress2">Address 2</label>
-        <input type="text" class="form-control in" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        <input type="text" name="address2" class="form-control in" id="inputAddress2" placeholder="Apartment, studio, or floor">
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputCity">City</label>
-          <input type="text" class="form-control in" id="inputCity">
+          <input type="text" name="city" class="form-control in" id="inputCity">
         </div>
         <div class="form-group col-md-4">
           <label for="inputState">State</label>
-          <select id="inputState" class="form-control in">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
+          <input type="text" name="state" class="form-control in" id="inputCity">
         </div>
         <div class="form-group col-md-2">
           <label for="inputZip">Zip</label>
-          <input type="text" class="form-control in" id="inputZip">
+          <input type="text" name="zipno" class="form-control in" id="inputZip">
         </div>
       </div>
-      <div class="form-group">
+      <!-- <div class="form-group">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridCheck">
           <label class="form-check-label" for="gridCheck">
             T&C
           </label>
         </div>
-      </div>
+      </div> -->
       <button type="submit" class="btn btn-primary btn-lg in button-center">Sign in</button>
     </form>
   </div>
