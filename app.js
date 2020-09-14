@@ -2,6 +2,7 @@ const express=require('express');
 const path = require('path');
 const port =80;
 const app=express();
+const bodyparser = require("body-parser");
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/Navy', {useNewUrlParser: true});
