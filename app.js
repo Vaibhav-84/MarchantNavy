@@ -33,7 +33,7 @@ app.post('/contact.html', (req, res)=>{
     }).catch(()=>{
         res.status(404).send("not send ")
     })
-    // res.status(200).redirect('/contact');
+    res.status(200).redirect('/contact');
 })
 
 app.get('/about', (req, res) => {
